@@ -39,7 +39,7 @@ const Inscription = () => {
 
       const data = await response.json();
       if (response.ok) {
-        setMessage('Inscription réussie !');
+        setMessage('Inscription réussie !'); 
         setFormData({ nom: '', email: '', motDePasse: '', acceptTerms: true });
       } else {
         setMessage(data.message || 'Une erreur est survenue.');
